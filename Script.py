@@ -202,17 +202,15 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+@Pushpan_telegram
+ <b>𝗙𝗜𝗟𝗘 𝗡𝗔𝗠𝗘<b> : <code>TP|{file_name}</code>  
 
-<b>
-╭─────── • ◆ • ───────╮
-🔅 Admin :  <a href="https://t.me/addtheme/vipzzk">Tᴏᴜᴄʜ</a>
-╰─────── • ◆ • ───────╯
-
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @RequestTP
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @TGpushpanXbugss
-=========== • ✠ • ===========</b>"""
+<b>•──────────────────•
+🔸ᴍᴏᴠɪᴇꜱ | 🔸ꜱᴇʀɪᴇꜱ | 🔸ᴀɴɪᴍᴇ 
+◼️─────────────────◼️
+┣ ▪️https://t.me/RequestTP 
+┣ ▪️@RequestTP 
+╰────❰  ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ❱───◼️ </b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
