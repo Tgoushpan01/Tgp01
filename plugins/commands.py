@@ -808,7 +808,9 @@ async def send_msg(bot, message):
         try:
             user = await bot.get_users(target_id)
             users = await db.get_all_users()
-            async for usr in users:
+            # Convert the list to an asynchronous iterable
+            async_users = iter(users)
+            async for usr in async_users:
                 out += f"{usr['id']}"
                 out += '\n'
             if str(user.id) in str(out):
@@ -824,7 +826,7 @@ async def send_msg(bot, message):
             await message.reply_text(f"<b>Eʀʀᴏʀ: {e}</b>")
     else:
         await message.reply_text("<b>Usᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇssᴀɢᴇ ᴜsɪɴɢ ᴛʜᴇ ᴛᴀʀɢᴇᴛ ᴄʜᴀᴛ ɪᴅ. Fᴏʀ ᴇɢ: /send ᴜsᴇʀɪᴅ</b>")
-
+        
 @Client.on_message(filters.command("deletefiles") & filters.user(ADMINS))
 async def deletemultiplefiles(bot, message):
     chat_type = message.chat.type
